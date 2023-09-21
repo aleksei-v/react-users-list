@@ -3,7 +3,6 @@ import User from './User';
 import { Skeleton } from './Skeleton';
 
 const Users = ({ items, isLoading, onChangeSearchValue, searchValue }) => {
-    console.log(searchValue)
     return (
         <div>
             <div className="search">
