@@ -1,8 +1,8 @@
 import React from 'react'
-import { BiAddToQueue } from "react-icons/bi";
+import { BiBookmarkPlus, BiBookmarkMinus } from "react-icons/bi";
 
 
-const User = ({email, first_name, last_name, avatar}) => {
+const User = ({ id, email, first_name, last_name, avatar, onClickInvite, isInvited }) => {
   return (
        <li>
     <div>
@@ -17,7 +17,13 @@ const User = ({email, first_name, last_name, avatar}) => {
         </p>
       </div>
       </div>
-      <button className='action'><BiAddToQueue/></button>
+      <button onClick={() => onClickInvite(id)} className='action'>
+      
+        {
+          
+          isInvited ? <BiBookmarkMinus/> : <BiBookmarkPlus />}
+       
+      </button>
       
   </li>
   )
