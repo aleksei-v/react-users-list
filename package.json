@@ -2,7 +2,7 @@
   "name": "react-users-list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://https://aleksei-v.github.io/react-users-list/",
+  "homepage": "https://aleksei-v.github.io/react-users-list/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
