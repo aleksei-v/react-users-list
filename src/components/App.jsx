@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Users from "./Users";
 import { Success } from "./Success";
-
+import { Notify } from "notiflix";
 
 
 export const App = () => {
@@ -27,9 +27,11 @@ export const App = () => {
 
   const onClickInvite = id => {
     if (invites.includes(id)) {
-      setInvites((prev) => prev.filter((_id) => _id !== id))
+      setInvites((prev) => prev.filter((_id) => _id !== id));
+      Notify.failure("Видалено з запрошених")
     } else {
       setInvites(prev => [...prev, id])
+      Notify.success("Додано до запрошених")
     }
     
   }

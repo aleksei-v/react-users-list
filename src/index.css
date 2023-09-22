@@ -52,14 +52,11 @@ body {
   margin-top: 30px;
 }
  
-.users-list  li {
+.users-list__item {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 15px;
-}
-.users-list>div {
-  display: flex;
 }
 
 .users-list .avatar {
@@ -103,8 +100,21 @@ cursor: pointer;
 .users-list path {
   fill: rgba(0, 0, 0, 0.2);
 }
+.send-back-btn {
+      padding: 16px 15px;
+      border-radius: 15px;
+      font-size: 16px;
+      color: #fff;
+      width: 100%;
+      border: 0;
+      outline: none;
+      cursor: pointer;
+      transition: all 0.1s ease-in-out;
+      background-color: rgb(251, 80, 0);
+      box-shadow: 0 7px 10px rgba(251, 80, 0, 0.4);
+}
 .send-invite-btn {
-  background-color: rgb(251, 80, 0);
+  background-color: rgb(184, 168, 161);
   padding: 16px 15px;
   border-radius: 15px;
   font-size: 16px;
@@ -112,17 +122,20 @@ cursor: pointer;
   width: 100%;
   border: 0;
   outline: none;
-  box-shadow: 0 7px 10px rgba(251, 80, 0, 0.4);
+  pointer-events: none;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
-
-
 }
-.send-invite-btn:hover {
-  background-color: rgb(255, 97, 24);
+.send-invite-btn.active {
+  background-color: rgb(251, 80, 0);
+  box-shadow: 0 7px 10px rgba(251, 80, 0, 0.4);
+  pointer-events: auto;
+}
+.send-invite-btn:hover.active {
+  background-color: rgb(255, 97, 33);
 }
 
-.send-invite-btn:active {
+.send-invite-btn:active.active {
   transform: translateY(2px);
   box-shadow: none;
 }

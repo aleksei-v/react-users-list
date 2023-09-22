@@ -8,7 +8,7 @@ export const Success = ({ count }) => {
           <p>
               {count === 1 ? `Одному користувачу ` : `Всім ${count} користувачам`}
               відправлено запрошення.</p>
-      <button onClick={() => window.location.reload()} className="send-invite-btn">Назад</button>
+      <button onClick={() => window.location.reload()} className="send-back-btn">Назад</button>
     </div>
   );
 };

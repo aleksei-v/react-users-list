@@ -3,6 +3,7 @@ import User from './User';
 import { Skeleton } from './Skeleton';
 
 const Users = ({ items, isLoading, onChangeSearchValue, searchValue, invites, onClickInvite, onClickSendInvites }) => {
+    const buttonClass = invites.length > 0 ? 'send-invite-btn active' : 'send-invite-btn';
     return (
         <div>
             <div className="search">
@@ -21,7 +22,6 @@ const Users = ({ items, isLoading, onChangeSearchValue, searchValue, invites, on
                 </div>
             ) : (
                 <ul className="users-list">
-                    <ul>
                         {items.filter(({first_name, last_name, email}) => {
                             const fullName = (first_name + last_name).toLowerCase();
                             return fullName.includes(searchValue.toLowerCase()) || email.toLowerCase().includes(searchValue.toLowerCase());
@@ -32,12 +32,11 @@ const Users = ({ items, isLoading, onChangeSearchValue, searchValue, invites, on
                                     key={item.id}
                                     {...item} />)}
                     </ul>
-                </ul>
             )}
             
-     {invites.length > 0 && (
-        <button  onClick={onClickSendInvites} className="send-invite-btn">Відправити запрошення</button>
-        )}
+   
+            <button onClick={onClickSendInvites} className={buttonClass} >Відправити запрошення</button>
+   
 
         </div>
     );
