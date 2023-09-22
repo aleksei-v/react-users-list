@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "//aleksei-v.github.io/react-users-list/static/css/main.e2dd1746.css",
-    "main.js": "//aleksei-v.github.io/react-users-list/static/js/main.4180a147.js",
-    "index.html": "//aleksei-v.github.io/react-users-list/index.html",
-    "main.e2dd1746.css.map": "//aleksei-v.github.io/react-users-list/static/css/main.e2dd1746.css.map",
-    "main.4180a147.js.map": "//aleksei-v.github.io/react-users-list/static/js/main.4180a147.js.map"
+    "main.css": "/react-users-list/static/css/main.e2dd1746.css",
+    "main.js": "/react-users-list/static/js/main.4180a147.js",
+    "index.html": "/react-users-list/index.html",
+    "main.e2dd1746.css.map": "/react-users-list/static/css/main.e2dd1746.css.map",
+    "main.4180a147.js.map": "/react-users-list/static/js/main.4180a147.js.map"
   },
   "entrypoints": [
     "static/css/main.e2dd1746.css",
